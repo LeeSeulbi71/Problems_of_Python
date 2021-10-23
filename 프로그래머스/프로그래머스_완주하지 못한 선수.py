@@ -20,6 +20,22 @@ def solution(participant, completion):
                 return j
 
 print(solution(["marina", "josipa", "nikola", "vinko", "filipa"], ["josipa", "filipa", "marina", "nikola"]))
-    
 
+#participant[i]해서 competition에 있는지 확인 후 있으면 삭제
+#없으면 반환
 
+def solution2(participant, completion):
+    answer = ''
+    for i in range(len(participant)):
+        if participant[i] in completion:
+            completion.remove(participant[i])
+        else:
+            answer = participant[i]
+            break
+    return answer
+print(solution2(["leo", "kiki", "eden"], ["eden","kiki"]))
+
+#차집합 교집합 합집합
+
+def solution3(participant, completion):
+    participant.union
