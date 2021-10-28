@@ -12,6 +12,7 @@ def solution(s):
                 string_list[i][j] = string_list[i][j].upper()
             else:
                 string_list[i][j] = string_list[i][j].lower()
+    print(string_list)
     for k in range(len(string_list)):
         string_list[k] = "".join(string_list[k])
     string_list = " ".join(string_list)
