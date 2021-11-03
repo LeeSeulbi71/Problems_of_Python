@@ -9,7 +9,7 @@ def Fibonacci(n):
     elif n == 1:
         return 1
     else:
-        return Fibonacci(n-1) + Fibonacci(n-2)
+        return Fibonacci(n-2) + Fibonacci(n-1)
 
 print(Fibonacci(4))
 print(solution(3))
