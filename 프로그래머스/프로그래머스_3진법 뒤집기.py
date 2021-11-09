@@ -1,6 +1,5 @@
 def solution(n):
     answer = 0
-    list_10_3 = []
     while ((n//3) not in [0,1,2]): 
         list_10_3.append(n%3)
         n = n//3
