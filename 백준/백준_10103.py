@@ -17,5 +17,5 @@ for i in range(Round_Num):
     else:
         continue
 
-print(f"{Changyeong} \n {Sangdeok}")
+print(f"{Changyeong} \n{Sangdeok}")
         
