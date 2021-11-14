@@ -1,4 +1,4 @@
-# 주사위 세 개
+### 주사위 세 개
 
 dice = list(map(int, input().split()))
 init_dice = dice
