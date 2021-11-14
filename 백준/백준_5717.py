@@ -1,0 +1,9 @@
+#상근이의 친구들
+
+while 1:
+    M, F = map(int, input().split())
+    
+    if (M==0 & F==0):
+        break
+    else:
+        print(M+F)
