@@ -1,16 +1,26 @@
-### 주사위 세 개
+### 주사위 게임
 
-dice = list(map(int, input().split()))
-init_dice = dice
-dice = list(set(dice))
+Participants = int(input())
+Participants_list = []
 
-if len(dice) == 0:
-    print(10000+init_dice[0]*1000)
-elif len(dice) == 2:
-    sum_dice = init_dice + dice
-    if sum_dice.count(dice[0]) < sum_dice.count(dice[1]):
-        print(1000+init_dice[1]*100)
+for participant in range(Participants):
+    dice = list(map(int, input().split()))
+    init_dice = dice
+    dice = list(set(dice))
+
+    if len(dice) == 1:
+        reward = (10000+init_dice[0]*1000)
+    elif len(dice) == 2:
+        sum_dice = init_dice + dice
+        if sum_dice.count(dice[0]) < sum_dice.count(dice[1]):
+            reward = 1000+init_dice[1]*100
+        else:
+            reward = 1000+init_dice[0]*100
     else:
-        print(1000+init_dice[0]*100)
-else:
-    print(max(dice)* 100)
+        reward = max(dice)* 100
+    
+    Participants_list.append(reward)
+
+print(Participants_list)
+
+print(max(Participants_list))
