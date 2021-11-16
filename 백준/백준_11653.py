@@ -1,1 +1,11 @@
 # 소인수분해
+
+N = int(input())
+m = 2
+
+while N != 1:
+    if N%m == 0:
+        print(m)
+        N = N//m
+    else:
+        m+=1
