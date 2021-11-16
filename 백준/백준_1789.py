@@ -1,13 +1,13 @@
 #수들의 합
 
-Sum_Num = int(input())
-n = 1
-make_Sum = 1
+s = int(input())
+total = 0
 count = 0
 
-while make_Sum != Sum_Num:
-    n += 1
-    make_Sum += n
-    count +=1
+while 1:
+    count += 1
+    total += count
+    if total > s:
+        break
 
-print(count)
+print(count-1)
