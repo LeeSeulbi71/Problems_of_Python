@@ -13,5 +13,6 @@ while ((answer_minute>=60) or (answer_hour>23)):
 
     elif answer_hour >23:
         answer_hour = 0
+        answer_hour -=24
 
 print(answer_hour, answer_minute)
