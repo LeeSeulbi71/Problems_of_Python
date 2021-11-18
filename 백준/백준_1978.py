@@ -1,7 +1,7 @@
 #소수 찾기
 
 count = int(input())
-num = list(int(input().split()))
+num = list(map(int, input().split()))
 decimal = 0
 
 for i in num:
