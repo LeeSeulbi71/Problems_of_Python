@@ -3,16 +3,17 @@
 M = int(input())
 N = int(input())
 
-num = list(range(M, N+1))
 decimal = []
 
-for i in num:
+for i in range(M, N+1):
     error = 0
-    for j in range(2, i):
-        if i % j == 0:
-            error += 1
-    if error == 0:
-        decimal.append(i)
+    if i  > 1:
+        for j in range(2, i):
+            if i % j == 0:
+                error += 1
+                break
+        if error == 0:
+            decimal.append(i)
 
 if len(decimal) > 0:
     print(sum(decimal))
