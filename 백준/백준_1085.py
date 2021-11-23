@@ -1,7 +1,5 @@
 #직사각형에서 탈출
 
-import math
-
 x, y, w, h = map(int, input().split())
 
 if w-x > x:
