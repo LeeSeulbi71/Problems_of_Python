@@ -9,7 +9,7 @@ while N >= 0:
         print(count)
         break
     N -= 3
-    count += 1
+    count += 1ㄱ주
 else:
     print(-1)
 
