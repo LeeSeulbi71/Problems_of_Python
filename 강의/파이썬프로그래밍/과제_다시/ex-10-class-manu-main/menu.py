@@ -36,4 +36,3 @@ if __name__ == '__main__':
     menu.get_meal(5)
     menu.get_meal(0.8)
     menu.clear_menu()
-    print(menu)
