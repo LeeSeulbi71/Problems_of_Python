@@ -1,6 +1,6 @@
 
 class Cube:
-    #===== write your code below =======
+    #===== write your code below ========
     def __init__(self, edge_length) -> None:
         self.edge_length = edge_length
     def volume(self):
