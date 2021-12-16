@@ -15,13 +15,11 @@ for T in range(T_num):
     distance_between_center = math.sqrt(pow(list_jo[0]-list_baek[0], 2)+pow(list_jo[1]-list_baek[1], 2))
     sum_of_radius = list_jo[2] + list_baek[2]
 
-    if (list_jo[0] == list_baek[0]) and (list_jo[1] == list_baek[1]) and (list_jo[2] != list_baek[2]):
-        print(0)
-    elif (list_jo[0] == list_baek[0]) and (list_jo[1] == list_baek[1]) and (list_jo[2] == list_baek[2]):
+    if distance_between_center == 0 and list_jo[2] == list_baek[2]:
         print(-1)
-    elif distance_between_center > sum_of_radius:
-        print(0)
-    elif distance_between_center == sum_of_radius:
+    elif abs(list_jo[2]-list_baek[2]) == distance_between_center or distance_between_center == sum_of_radius:
         print(1)
-    elif distance_between_center < sum_of_radius:
+    elif abs(list_jo[2]-list_baek[2]) < distance_between_center < sum_of_radius:
         print(2)
+    else:
+        print(0)
