@@ -17,7 +17,7 @@ def prime(num):
             return 0
     return 1
 
-print(solution(10))
+print(solution(100))
 
 # 알고리즘 - 에라토스테네스의 체
 # 다른 사람 풀이
